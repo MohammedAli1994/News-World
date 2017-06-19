@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tca-bB-RuD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VF8-iJ-cYw">
+            <objects>
+                <viewController id="tca-bB-RuD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SX3-U6-a4o"/>
+                        <viewControllerLayoutGuide type="bottom" id="ez1-g5-1RW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ANS-6L-nVi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news" translatesAutoresizingMaskIntoConstraints="NO" id="V47-5W-pLO">
+                                <rect key="frame" x="112" y="220" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0RM-rv-YGd"/>
+                                    <constraint firstAttribute="height" constant="150" id="Ehs-AE-N3p"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME To News World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOS-do-YaI">
+                                <rect key="frame" x="0.0" y="470" width="375" height="89.5"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="34"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BOS-do-YaI" firstAttribute="centerX" secondItem="V47-5W-pLO" secondAttribute="centerX" id="2hR-my-GgR"/>
+                            <constraint firstItem="BOS-do-YaI" firstAttribute="top" secondItem="V47-5W-pLO" secondAttribute="bottom" constant="100" id="FMX-EY-9Yq"/>
+                            <constraint firstItem="BOS-do-YaI" firstAttribute="leading" secondItem="ANS-6L-nVi" secondAttribute="leading" id="HCp-FF-zAy"/>
+                            <constraint firstItem="V47-5W-pLO" firstAttribute="centerX" secondItem="ANS-6L-nVi" secondAttribute="centerX" id="Ris-wF-taw"/>
+                            <constraint firstAttribute="trailing" secondItem="BOS-do-YaI" secondAttribute="trailing" id="TdT-L9-PKX"/>
+                            <constraint firstItem="V47-5W-pLO" firstAttribute="top" secondItem="SX3-U6-a4o" secondAttribute="bottom" constant="200" id="Vhj-46-YFC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Yg-Fx-Ge8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216.80000000000001" y="244.22788605697153"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="news" width="256" height="256"/>
+    </resources>
+</document>
